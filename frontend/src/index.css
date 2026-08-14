@@ -1,0 +1,702 @@
+@import url(
+  "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+);
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+
+  font-family: "Inter", sans-serif;
+
+  background: #f5f7fa;
+
+  color: #172033;
+}
+
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+
+.app {
+  min-height: 100vh;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.header {
+
+  height: 76px;
+
+  background: white;
+
+  border-bottom: 1px solid #e5e9f0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 40px;
+}
+
+
+.brand {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+.brand-logo {
+
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 10px;
+
+  background: #172033;
+
+  color: white;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-weight: 800;
+}
+
+
+.brand h1 {
+
+  margin: 0;
+
+  font-size: 19px;
+}
+
+
+.brand span {
+
+  font-size: 11px;
+
+  color: #7b8495;
+}
+
+
+.system-status {
+
+  font-size: 13px;
+
+  color: #596273;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+
+.status-dot {
+
+  width: 8px;
+
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #22c55e;
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container {
+
+  max-width: 1450px;
+
+  margin: auto;
+
+  padding: 40px;
+}
+
+
+.page-heading {
+
+  margin-bottom: 28px;
+}
+
+
+.section-label {
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  color: #7b8495;
+}
+
+
+.page-heading h1 {
+
+  margin: 7px 0;
+
+  font-size: 30px;
+}
+
+
+.page-heading p {
+
+  margin: 0;
+
+  color: #70798a;
+
+  font-size: 14px;
+}
+
+
+/* ==========================================
+   UPLOAD
+========================================== */
+
+.upload-card {
+
+  background: white;
+
+  border: 1px dashed #bdc5d3;
+
+  border-radius: 14px;
+
+  padding: 28px;
+
+  text-align: center;
+
+  margin-bottom: 28px;
+}
+
+
+.upload-icon {
+
+  width: 45px;
+
+  height: 45px;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  background: #f0f3f8;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 22px;
+}
+
+
+.upload-card h2 {
+
+  margin: 14px 0 5px;
+
+  font-size: 18px;
+}
+
+
+.upload-card p {
+
+  color: #737c8d;
+
+  font-size: 13px;
+}
+
+
+.upload-button {
+
+  display: inline-block;
+
+  margin-top: 10px;
+
+  padding: 12px 20px;
+
+  border-radius: 8px;
+
+  background: #172033;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+
+.upload-help {
+
+  display: block;
+
+  margin-top: 10px;
+
+  color: #8b93a2;
+
+  font-size: 11px;
+}
+
+
+/* ==========================================
+   WORKSPACE
+========================================== */
+
+.workspace {
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 2fr)
+    minmax(350px, 1fr);
+
+  gap: 24px;
+}
+
+
+/* ==========================================
+   CARD
+========================================== */
+
+.card {
+
+  background: white;
+
+  border-radius: 14px;
+
+  border: 1px solid #e5e9f0;
+
+  overflow: hidden;
+}
+
+
+.card-header {
+
+  padding: 22px 24px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  border-bottom: 1px solid #e9edf3;
+}
+
+
+.card-header h2 {
+
+  margin: 5px 0 0;
+
+  font-size: 20px;
+}
+
+
+.ai-badge {
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  padding: 6px 9px;
+
+  border-radius: 6px;
+
+  background: #eef2ff;
+
+  color: #4f46e5;
+}
+
+
+/* ==========================================
+   FORM
+========================================== */
+
+.form-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 0;
+
+}
+
+
+.form-section {
+
+  padding: 22px;
+
+  border-bottom: 1px solid #edf0f4;
+}
+
+
+.form-section:nth-child(odd) {
+
+  border-right: 1px solid #edf0f4;
+}
+
+
+.form-section h3 {
+
+  margin: 0 0 18px;
+
+  font-size: 14px;
+}
+
+
+label {
+
+  display: block;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  color: #606a7a;
+
+  margin-bottom: 14px;
+}
+
+
+input,
+textarea {
+
+  display: block;
+
+  width: 100%;
+
+  margin-top: 7px;
+
+  padding: 10px 11px;
+
+  border: 1px solid #dce1e9;
+
+  border-radius: 7px;
+
+  outline: none;
+
+  font-size: 13px;
+
+  color: #172033;
+
+  background: white;
+}
+
+
+input:focus,
+textarea:focus {
+
+  border-color: #7c8cff;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(124, 140, 255, 0.1);
+}
+
+
+textarea {
+
+  resize: vertical;
+}
+
+
+/* ==========================================
+   AI PANEL
+========================================== */
+
+.ai-panel {
+
+  background: #172033;
+
+  color: white;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  position: sticky;
+
+  top: 20px;
+}
+
+
+.ai-panel-header {
+
+  padding: 24px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  border-bottom: 1px solid
+    rgba(255,255,255,0.1);
+}
+
+
+.ai-panel-header h2 {
+
+  margin: 5px 0 0;
+
+  font-size: 20px;
+}
+
+
+.ai-panel .section-label {
+
+  color: #9da7ba;
+}
+
+
+.sparkle {
+
+  font-size: 25px;
+
+  opacity: 0.8;
+}
+
+
+/* ==========================================
+   RISK
+========================================== */
+
+.risk-box {
+
+  margin: 20px;
+
+  padding: 18px;
+
+  border-radius: 10px;
+
+  background: rgba(
+    255,
+    255,
+    255,
+    0.06
+  );
+}
+
+
+.risk-box > span {
+
+  font-size: 10px;
+
+  color: #9da7ba;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+.risk-level {
+
+  margin-top: 8px;
+
+  font-size: 25px;
+
+  font-weight: 800;
+}
+
+
+.risk-critical {
+  color: #ff5c5c;
+}
+
+
+.risk-high {
+  color: #ff8a5b;
+}
+
+
+.risk-medium {
+  color: #f5c451;
+}
+
+
+.risk-low {
+  color: #48d597;
+}
+
+
+.risk-none {
+  color: #aab2c0;
+}
+
+
+/* ==========================================
+   AI SECTIONS
+========================================== */
+
+.ai-section {
+
+  padding: 20px;
+
+  border-top: 1px solid
+    rgba(255,255,255,0.08);
+}
+
+
+.ai-section h3 {
+
+  margin: 0 0 10px;
+
+  font-size: 13px;
+}
+
+
+.ai-section p {
+
+  color: #aeb6c5;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+.completeness {
+
+  font-size: 12px;
+
+  color: #d7dce5;
+}
+
+
+.missing {
+
+  margin-top: 10px;
+
+  color: #9da7ba;
+}
+
+
+.missing span {
+
+  display: inline-block;
+
+  margin: 5px 5px 0 0;
+
+  padding: 5px 8px;
+
+  border-radius: 5px;
+
+  background: rgba(
+    255,
+    255,
+    255,
+    0.08
+  );
+}
+
+
+.recommendations {
+
+  margin: 0;
+
+  padding-left: 20px;
+
+  color: #c5ccd8;
+
+  font-size: 12px;
+
+  line-height: 2;
+}
+
+
+/* ==========================================
+   ERROR
+========================================== */
+
+.error-message {
+
+  padding: 13px 16px;
+
+  margin-bottom: 20px;
+
+  border-radius: 8px;
+
+  background: #fff0f0;
+
+  border: 1px solid #ffd0d0;
+
+  color: #c73535;
+
+  font-size: 13px;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1000px) {
+
+  .workspace {
+
+    grid-template-columns: 1fr;
+  }
+
+  .ai-panel {
+
+    position: static;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .container {
+
+    padding: 20px;
+  }
+
+  .header {
+
+    padding: 0 20px;
+  }
+
+  .form-grid {
+
+    grid-template-columns: 1fr;
+  }
+
+  .form-section:nth-child(odd) {
+
+    border-right: none;
+  }
+
+}
